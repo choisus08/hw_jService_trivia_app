@@ -1,6 +1,12 @@
+import {useState} from 'react'
+
 function Display(props){
 
     const question = props.question
+
+    const [showAnswer, setShowAnswer] = useState(true);
+
+    const onClick = () => setShowAnswer(!showAnswer);
 
     if (question[0]) {
         return <div>
@@ -11,13 +17,16 @@ function Display(props){
             </div>
 
             <div>
-                <h2>Answer: {question[0].answer}</h2>
+                <h2>Answer: <button onClick={onClick}>{showAnswer ? 'Show answer': 'Hide answer'}</button></h2>
+                
+                <h2>{!showAnswer ? question[0].answer : null}</h2>
             </div>
         </div>
     }else {
-        return <h1>Try again</h1>
+        return <h1>Trivia Game</h1>
     }
 
+    
 }
 
 export default Display;

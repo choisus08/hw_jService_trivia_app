@@ -29,12 +29,11 @@ function ControlledForm(props){
 
     return <div>
 
-        <h2>Controlled Form</h2>
+        <h2>Click to play</h2>
         <form onSubmit={handleSubmit}>
             <input type='submit' name="randomQuestion" value="Random Trivia Question" onChange={handleChange} />
         </form>
-        <br />
-        <button>Show answer</button>
+        <br/>
             
     </div>
 
