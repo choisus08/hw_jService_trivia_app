@@ -10,7 +10,7 @@ function App() {
     <div className="App">
       
       <Display question={question}/>
-      <ControlledForm />
+      <ControlledForm setQuestion={setQuestion}/>
 
     </div>
   );
