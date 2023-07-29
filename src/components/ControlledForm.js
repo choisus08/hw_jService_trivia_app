@@ -33,6 +33,8 @@ function ControlledForm(props){
         <form onSubmit={handleSubmit}>
             <input type='submit' name="randomQuestion" value="Random Trivia Question" onChange={handleChange} />
         </form>
+        <br />
+        <button>Show answer</button>
             
     </div>
 
