@@ -13,12 +13,11 @@ function ControlledForm(props){
     }
 
     const fetchQuestion = async(randomQuestion) => {
-        // const apiKey = 'a6b23e5d';
-        const url = `http://jservice.io/api/random`;
+        const url = 'http://jservice.io/api/random';
         const response = await fetch(url)
         console.log(response)
         const data = await response.json();
-        console.log(data)
+        console.log(data[0])
         props.setQuestion(data)
     }
 
@@ -34,7 +33,6 @@ function ControlledForm(props){
         <form onSubmit={handleSubmit}>
             <input type='submit' name="randomQuestion" value="Random Trivia Question" onChange={handleChange} />
         </form>
-        
             
     </div>
 
