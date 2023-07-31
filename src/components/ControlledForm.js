@@ -15,9 +15,9 @@ function ControlledForm(props){
     const fetchQuestion = async(randomQuestion) => {
         const url = 'http://jservice.io/api/random';
         const response = await fetch(url)
-        console.log(response)
+        // console.log(response)
         const data = await response.json();
-        console.log(data[0])
+        // console.log(data[0])
         props.setQuestion(data)
     }
 
@@ -27,12 +27,10 @@ function ControlledForm(props){
         setFormData({randomQuestion: ""})
     }
 
-    return <div>
-        <h2>Click to play</h2>
+    return <div className="ControlledForm">
         <form onSubmit={handleSubmit}>
-            <input type='submit' name="randomQuestion" value="Random Trivia Question" onChange={handleChange} />
-        </form>
-            
+            <input className="Question-button" type='submit' name="randomQuestion" value="Random Trivia Question" onChange={handleChange} />
+        </form>         
     </div>
 
 

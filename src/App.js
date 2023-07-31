@@ -9,6 +9,7 @@ function App() {
   return (
     <div className="App">
       
+      <h1 className="Header">TRIVIA GAME</h1>
       <Display question={question}/>
       <ControlledForm setQuestion={setQuestion}/>
 

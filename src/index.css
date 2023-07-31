@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Press+Start+2P&display=swap');
+
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -5,9 +8,58 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  background-color: rgb(21, 21, 21);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.Display {
+  margin: 5em 0 3em 0;
+}
+
+.ControlledForm, .Display, .Header, h4 {
+  color: white;
+}
+
+.ControlledForm, .Display, .Header, .Click {
+  text-align: center;
+  
+}
+
+.Question-button, .Answer-button, .Score-buttons, .Reset-button {
+  border-radius: 20px;
+  background-color: white;
+  border: none;
+}
+
+.Header {
+  font-family: "Press Start 2P"
+}
+
+.Click {
+    margin: 5em 0 1em 0
+}
+
+.Question-button {
+  padding: .5em .7em;
+}
+
+.Answer-button {
+  padding: .6em;
+}
+
+.Score-buttons {
+  padding: .5em;
+  margin: .2em;
+  width: 2em
+}
+
+.Reset-button {
+  padding: .5em;
+  width: 4.5em;
+  margin: .2em;
 }

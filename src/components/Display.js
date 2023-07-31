@@ -11,14 +11,16 @@ function Display(props){
     const clickAnswer = () => setHideAnswer(!hideAnswer);
 
     if (question[0]) {
-        return <div>
+        return <div className='Display'>
             <div>
-                <h1>Trivia Game</h1>
-                <h2>Score: {counter}</h2>
+                
                 <div className='Score'>
-                    <button onClick={() => setCounter(counter + 1)}>+</button>
-                    <button onClick={() => setCounter(counter - 1)}>-</button>
-                    <button onClick={() => setCounter(0)}>Reset</button>
+                    <h2>Score: {counter}</h2>
+                    <div>
+                        <button className='Score-buttons' onClick={() => setCounter(counter + 100)}>+</button>
+                        <button className='Score-buttons' onClick={() => setCounter(counter - 100)}>-</button>
+                        <button className='Reset-button' onClick={() => setCounter(0)}>Reset</button>
+                    </div>
                 </div>
                 <div>
                     <h2>Question: {question[0].question}</h2>
@@ -28,12 +30,12 @@ function Display(props){
             </div>
 
             <div>
-                <h2>Answer: <button onClick={clickAnswer}>{hideAnswer ? 'Show answer': 'Hide answer'}</button></h2>
+                <h2>Answer: <button className='Answer-button' onClick={clickAnswer}>{hideAnswer ? 'Show answer': 'Hide answer'}</button></h2>
                 <h2>{!hideAnswer ? question[0].answer : null}</h2>
             </div>
         </div>
     }else {
-        return <h1>Trivia Game</h1>
+        return <h4 className='Click'>Click to play!</h4>
     }
 
 }
