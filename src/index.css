@@ -18,7 +18,7 @@ code {
 }
 
 .Display {
-  margin: 5em 0 3em 0;
+  margin: 4em 0 3em 0;
 }
 
 .ControlledForm, .Display, .Header, h4 {
@@ -27,7 +27,6 @@ code {
 
 .ControlledForm, .Display, .Header, .Click {
   text-align: center;
-  
 }
 
 .Question-button, .Answer-button, .Score-buttons, .Reset-button {
@@ -37,29 +36,55 @@ code {
 }
 
 .Header {
-  font-family: "Press Start 2P"
+  font-family: "Press Start 2P";
+}
+
+.Score {
+  padding: 0 0 2em 0;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 .Click {
     margin: 5em 0 1em 0
 }
 
+.Question-body {
+    padding: 0 2em;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+.Answer-body {
+    font-family:'Courier New', Courier, monospace;
+}
+
+.Question-button, .Answer-button, .Score-buttons, .Reset-button {
+  font-family: "Press Start 2P";
+  font-size: .5em;
+  cursor: pointer;
+}
+
 .Question-button {
-  padding: .5em .7em;
+  padding: 1.2em;
+  font-size: .6em;
+  background-color: rgb(247, 247, 116);
 }
 
 .Answer-button {
-  padding: .6em;
+  padding: 1em;
+  margin: 4em 0 0 0;
+  font-size: .4em;
 }
 
 .Score-buttons {
-  padding: .5em;
-  margin: .2em;
-  width: 2em
+  padding: 1em;
+  margin: .4em;
+  width: 3em;
 }
 
 .Reset-button {
-  padding: .5em;
-  width: 4.5em;
-  margin: .2em;
+  padding: 1em;
+  width: 7em;
+  margin: .5em;
+  font-size: .6em;
 }

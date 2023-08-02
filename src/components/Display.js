@@ -15,23 +15,23 @@ function Display(props){
             <div>
                 
                 <div className='Score'>
-                    <h2>Score: {counter}</h2>
+                    <h2 style={{color: 'yellow'}}>SCORE: {counter}</h2>
                     <div>
                         <button className='Score-buttons' onClick={() => setCounter(counter + 100)}>+</button>
                         <button className='Score-buttons' onClick={() => setCounter(counter - 100)}>-</button>
                         <button className='Reset-button' onClick={() => setCounter(0)}>Reset</button>
                     </div>
                 </div>
-                <div>
-                    <h2>Question: {question[0].question}</h2>
-                    <h3> Category: {question[0].category.title}</h3>
-                    <h3>Points: {question[0].value}</h3>
+                <div className='Question-body'>
+                    <h2>QUESTION: {question[0].question}</h2>
+                    <h3>CATEGORY: {question[0].category.title}</h3>
+                    <h3>POINTS: {question[0].value}</h3>
                 </div>
             </div>
 
-            <div>
-                <h2>Answer: <button className='Answer-button' onClick={clickAnswer}>{hideAnswer ? 'Show answer': 'Hide answer'}</button></h2>
-                <h2>{!hideAnswer ? question[0].answer : null}</h2>
+            <div className='Answer-body'>
+                <h2 style={{color: 'yellow'}}>ANSWER: <button className='Answer-button' onClick={clickAnswer}>{hideAnswer ? 'Show answer': 'Hide answer'}</button></h2>
+                <h2 style={{color: 'limeGreen'}}>{!hideAnswer ? question[0].answer : null}</h2>
             </div>
         </div>
     }else {
