@@ -30,7 +30,7 @@ function Display(props){
             </div>
 
             <div className='Answer-body'>
-                <h2 style={{color: 'yellow'}}>ANSWER: <button className='Answer-button' onClick={clickAnswer}>{hideAnswer ? 'Show answer': 'Hide answer'}</button></h2>
+                <h2>ANSWER: <button className='Answer-button' onClick={clickAnswer}>{hideAnswer ? 'Reveal Question': 'Hide Question'}</button></h2>
                 <h2 style={{color: 'limeGreen'}}>{!hideAnswer ? question[0].answer : null}</h2>
             </div>
         </div>
